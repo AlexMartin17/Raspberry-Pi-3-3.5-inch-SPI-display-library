@@ -1,0 +1,7 @@
+sudo cp ./lcd_35_v/kernel.img /boot/kernel.img
+sudo cp ./lcd_35_v/kernel7.img /boot/
+sudo cp ./lcd_35_v/*.dtb /boot/
+sudo cp ./lcd_35_v/overlays/*.dtb* /boot/overlays/
+sudo cp -rf ./lcd_35_v/lib/* /lib/
+sudo apt-mark hold raspberrypi-kernel
+sudo reboot

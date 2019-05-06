@@ -1,0 +1,10 @@
+sudo cp ./hdmi/kernel.img /boot/kernel.img
+sudo cp ./hdmi/kernel7.img /boot/
+sudo cp ./hdmi/*.dtb /boot/
+sudo cp ./hdmi/overlays/*.dtb* /boot/overlays/
+sudo cp -rf ./hdmi/lib/* /lib/
+sudo cp -r config.hdmi config.txt
+sudo mv config.txt /boot/
+sudo cp -r lxterminal.desktop.hdmi lxterminal.desktop
+sudo mv lxterminal.desktop /usr/share/raspi-ui-overrides/applications/
+sudo reboot

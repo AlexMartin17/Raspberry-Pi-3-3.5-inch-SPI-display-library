@@ -1,0 +1,11 @@
+sudo cp ./lcd_35_v/kernel.img /boot/kernel.img
+sudo cp ./lcd_35_v/kernel7.img /boot/
+sudo cp ./lcd_35_v/*.dtb /boot/
+sudo cp ./lcd_35_v/overlays/*.dtb* /boot/overlays/
+sudo cp -rf ./lcd_35_v/lib/* /lib/
+sudo cp -r config.disp config.txt
+sudo mv config.txt /boot/
+sudo cp -r lxterminal.desktop.disp lxterminal.desktop
+sudo mv lxterminal.desktop /usr/share/raspi-ui-overrides/applications/
+sudo apt-mark hold raspberrypi-kernel
+sudo reboot
